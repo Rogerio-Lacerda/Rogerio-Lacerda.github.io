@@ -1,0 +1,61 @@
+.footer {
+  background-color: #000;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding: 120px 20px 20px 20px;
+  padding-top: 80px;
+  margin: 0 auto;
+  gap: 100px;
+  align-items: center;
+  position: relative;
+}
+
+.footer-section::before {
+  content: "";
+  background: url("../img/detalhe.svg") no-repeat center;
+  display: block;
+  top: -65px;
+  left: 10px;
+  position: absolute;
+  height: 128px;
+  width: 128px;
+}
+
+.footer-texto {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.footer-contato li {
+  font-size: 2.25rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.footer-contato a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  grid-column: 1/-1;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .footer-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-contato li {
+    font-size: 1.4rem;
+  }
+}
